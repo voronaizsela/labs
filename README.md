@@ -1,3 +1,5 @@
+<div style="background-image: url('https://i.gifer.com/myh.gif'); background-size: cover; height: 400px; position: relative; overflow: hidden;">
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.5);"></div>
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23FF00FF&size=22&lines=Data+Preparation+%26+Analysis)](https://git.io/typing-svg)
 
 * ### [Lab2:](/lab2) Наука про дані: підготовчий етап
@@ -17,3 +19,4 @@
 ---
 
 * ### Lab7: Сценарії обробки багатоспектральних супутникових зображень
+</div>
