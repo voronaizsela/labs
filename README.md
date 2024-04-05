@@ -19,5 +19,6 @@
 
 * ### Lab7: Сценарії обробки багатоспектральних супутникових зображень
 
-<div class="tenor-gif-embed" data-postid="17915550" data-share-method="host" data-aspect-ratio="2.40601" data-width="100%"><a href="https://tenor.com/view/anime-aesthetic-city-train-moon-gif-17915550">Anime Aesthetic GIF</a>from <a href="https://tenor.com/search/anime-gifs">Anime GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+![Anime Aesthetic GIF](https://media.tenor.com/images/82a46d66edfcdd7de6a96472b6cb8b52/tenor.gif)
+
 
