@@ -1,5 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Data+Preparation+%26+Analysis)](https://git.io/typing-svg)
-# Data Preparation & Analysis
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23FF69B4&size=40&lines=Data+Preparation+%26+Analysis)](https://git.io/typing-svg)
 * ### [Lab2:](/lab2) Наука про дані: підготовчий етап
   ##### *Мета роботи: ознайомитися з основними кроками по роботі з даними –workflow від постановки задачі до написання пояснювальної записки,зрозуміти постановку задачі та природу даних, над якими виконується аналітичні операції.*
 
