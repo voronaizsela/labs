@@ -1,4 +1,3 @@
-
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23FF00FF&size=20&lines=Data+Preparation+%26+Analysis)](https://git.io/typing-svg)
 
 * ### [Lab2:](/lab2) Наука про дані: підготовчий етап
