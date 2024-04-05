@@ -19,3 +19,5 @@
 
 * ### Lab7: Сценарії обробки багатоспектральних супутникових зображень
 
+<img align="right" alt="Coding" width="400" src="https://tenor.com/ru/view/anime-aesthetic-city-train-moon-gif-17915550">
+
