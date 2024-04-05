@@ -1,5 +1,5 @@
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23FF00FF&size=22&lines=Data+Preparation+%26+Analysis)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23FF00FF&size=20&lines=Data+Preparation+%26+Analysis)](https://git.io/typing-svg)
 
 * ### [Lab2:](/lab2) Наука про дані: підготовчий етап
   ##### *Мета роботи: ознайомитися з основними кроками по роботі з даними –workflow від постановки задачі до написання пояснювальної записки,зрозуміти постановку задачі та природу даних, над якими виконується аналітичні операції.*
@@ -19,6 +19,5 @@
 
 * ### Lab7: Сценарії обробки багатоспектральних супутникових зображень
 
-![Anime Aesthetic GIF](https://media.tenor.com/images/82a46d66edfcdd7de6a96472b6cb8b52/tenor.gif)
 
 
