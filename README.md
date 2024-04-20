@@ -9,7 +9,7 @@
 ---
 
 * ### [Lab4:](/lab4) Структури для роботи з великими обсягами даних в Python
-  ##### *Мета: отримати навички роботи із структурами для зберігання в Python (python, numpy, pandas, numpy array, dataframe, timeit)*
+  ##### *Мета: отримати навички роботи із структурами для зберігання в Python (python, numpy, pandas, numpy array, dataframe, timeit)*(✅)
 ---
 
 * ### Lab5: Візуалізація даних
