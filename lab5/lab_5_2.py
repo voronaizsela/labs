@@ -2,7 +2,6 @@ import dash
 from dash import dcc, html, Input, Output, State
 import numpy as np
 import plotly.graph_objs as go
-from scipy import signal
 
 amplitude_st = 1.0
 frequency_st = 1.0
@@ -21,9 +20,11 @@ def harmonic(t, amplitude, frequency, phase, show_noise, sigma, noise_value):
     else:
         return clean_harmonic
 
-def gauss(data, sigma):
-    window = signal.windows.gaussian(len(data), sigma)
-    filtered_data = signal.convolve(data, window / window.sum(), mode='same')
+def median_filter(data, window_size):
+    filtered_data = np.zeros_like(data)
+    half_window = window_size // 2
+    for i in range(half_window, len(data) - half_window):
+        filtered_data[i] = np.median(data[i - half_window: i + half_window + 1])
     return filtered_data
 
 app = dash.Dash(__name__)
@@ -54,8 +55,8 @@ app.layout = html.Div([
             html.Label('Дисперсія:'),
             dcc.Slider(id='noise-covariance-slider', min=0, max=1, step=0.01, value=noisecov_st,
                        marks={i/100: str(i/100) for i in range(0, 101, 10)}, className='slider'),
-            html.Label('Сігма (Гаус):'),
-            dcc.Dropdown(id='gaussian-size-dropdown', options=[{'label': str(size), 'value': size} for size in range(1, 13)], value=sigma_st)
+            html.Label('Розмір вікна для медіанного фільтра:'),
+            dcc.Dropdown(id='median-window-dropdown', options=[{'label': str(size), 'value': size} for size in range(3, 13)], value=3)
         ], style={'width': '40%', 'float': 'left'})
     ])
 ])
@@ -89,12 +90,12 @@ def update_noise_data(noisemean, noisecov):
      Input('frequency-slider', 'value'),
      Input('phase-slider', 'value'),
      Input('show-noise-checkbox', 'value'),
-     Input('gaussian-size-dropdown', 'value'),
+     Input('median-window-dropdown', 'value'),
      Input('noise-data', 'data')]
 )
-def update_plots(amplitude, frequency, phase, show_noise, sigma, noise_value):
-    noisy_signal = harmonic(t, amplitude, frequency, phase, show_noise, sigma, noise_value)
-    filtered_signal = gauss(noisy_signal, sigma)
+def update_plots(amplitude, frequency, phase, show_noise, window_size, noise_value):
+    noisy_signal = harmonic(t, amplitude, frequency, phase, show_noise, sigma_st, noise_value)
+    filtered_signal = median_filter(noisy_signal, window_size)
 
     plot1 = go.Scatter(x=t, y=noisy_signal, mode='lines', name='Гармоніка з шумом', line=dict(color='purple'))
     layout1 = go.Layout(title='Гармоніка з шумом', xaxis_title='Час', yaxis_title='Амплітуда')
